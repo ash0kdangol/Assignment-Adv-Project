@@ -18,6 +18,13 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtSprice"></asp:RequiredFieldValidator>
                     </div>
             </div>
+            <div class="form-group">
+                <asp:Label ID="Label3" runat="server" CssClass="col-md-2 control-label" Text="Categories"></asp:Label>
+                <div class="col-md-3">
+                    <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtCategories"></asp:RequiredFieldValidator>
+                </div>
+            </div>
               <div class="form-group">
                     <div class="col-md-2"></div>
                     <div class="col-md-6">
