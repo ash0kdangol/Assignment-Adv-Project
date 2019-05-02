@@ -70,6 +70,7 @@
     <Content Include="AddBrand.aspx" />
     <Content Include="AddCategories.aspx" />
     <Content Include="AddProduct.aspx" />
+    <Content Include="AddSubCategories.aspx" />
     <Content Include="App_Data\smartdatabase.mdf" />
     <Content Include="App_Data\smartdatabase_log.ldf">
       <DependentUpon>smartdatabase.mdf</DependentUpon>
@@ -168,6 +169,13 @@
     </Compile>
     <Compile Include="AddProduct.aspx.designer.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubCategories.aspx.cs">
+      <DependentUpon>AddSubCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSubCategories.aspx.designer.cs">
+      <DependentUpon>AddSubCategories.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
