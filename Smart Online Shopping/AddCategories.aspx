@@ -34,4 +34,37 @@
                     </div>
             </div>
          </div>
+          <div class="form-horizontal">
+          <h2>Categories</h2>
+             <hr />
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">All Categories</div>
+              <asp:Repeater ID="RepeaterCategory" runat="server">
+               <HeaderTemplate>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Categories</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                </HeaderTemplate>
+                <ItemTemplate>
+                    <tr>
+                        <th><%# Eval("CatID") %></th>
+                        <td><%# Eval("catName") %></td>
+                        <td>Edit</td>
+                    </tr>
+                </ItemTemplate>
+                <FooterTemplate>
+                    </tbody>
+            </table>
+                </FooterTemplate>
+              </asp:Repeater>
+            </div>
+          </div>
+
 </asp:Content>

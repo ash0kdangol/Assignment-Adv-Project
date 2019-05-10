@@ -97,8 +97,7 @@
                 <h2>Registration Form</h2>
                 <hr />
             <div class="center-page">
-   
-            <label class=col-xs-11 space-vert">Name</label>
+              <label class="col-xs-11 space-vert">Name</label>
             <div class="col-xs-11">
                 <asp:TextBox ID="tbName" runat="server" Class="form-control" placeholder="Name"></asp:TextBox>
             </div>

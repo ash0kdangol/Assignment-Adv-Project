@@ -1,8 +1,8 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="Smart_Online_Shopping.AdminMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Smart_Online_Shopping.Site1" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
     <!doctype html>
 <html lang="en">
@@ -38,11 +38,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
-
 <body>
     <form id="form1" runat="server">
-        <div class="navbar-collapse navbar">
+         <div class="navbar-collapse navbar">
             <!---Navigation----->
             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
                     <div class="container">
@@ -79,15 +80,15 @@
                     </div>
                 </div>
             <!--Nav end--->
-            <div class="container">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            </div>
         </div>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-</form>
+    </form>
 </body>
-    </html>
+</html>

@@ -67,12 +67,21 @@ namespace Smart_Online_Shopping {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// btnaddSubCategory control.
+        /// BtnAddSubCategories control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnaddSubCategory;
+        protected global::System.Web.UI.WebControls.Button BtnAddSubCategories;
+        
+        /// <summary>
+        /// RepeaterSubCategory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RepeaterSubCategory;
     }
 }

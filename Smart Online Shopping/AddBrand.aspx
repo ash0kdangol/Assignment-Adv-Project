@@ -19,4 +19,36 @@
                     </div>
             </div>
          </div>
+      <div class="form-horizontal">
+          <h2>Brands</h2>
+             <hr />
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">All Brands</div>
+              <asp:Repeater ID="RepeaterBrand" runat="server">
+               <HeaderTemplate>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Brand</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                </HeaderTemplate>
+                <ItemTemplate>
+                    <tr>
+                        <th><%# Eval("BrandID") %></th>
+                        <td><%# Eval("BName") %></td>
+                        <td>Edit</td>
+                    </tr>
+                </ItemTemplate>
+                <FooterTemplate>
+                    </tbody>
+            </table>
+                </FooterTemplate>
+              </asp:Repeater>
+            </div>
+          </div>
 </asp:Content>

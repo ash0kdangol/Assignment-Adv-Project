@@ -49,13 +49,13 @@ namespace Smart_Online_Shopping {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// txtsprice control.
+        /// txtpprice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsprice;
+        protected global::System.Web.UI.WebControls.TextBox txtpprice;
         
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -227,33 +227,6 @@ namespace Smart_Online_Shopping {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
-        
-        /// <summary>
-        /// Label9 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
-        
-        /// <summary>
-        /// FUImg3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FUImg3;
-        
-        /// <summary>
-        /// RequiredFieldValidator9 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator9;
         
         /// <summary>
         /// btnaddproduct control.

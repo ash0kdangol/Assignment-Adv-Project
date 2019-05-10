@@ -14,8 +14,8 @@
             <div class="form-group">
                     <asp:Label ID="Label2" runat="server" CssClass="col-md-2 control-label" Text="Selling Price"></asp:Label>
                     <div class="col-md-3">
-                        <asp:TextBox ID="txtsprice" CssClass="form-control" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtSprice"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txtpprice" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtpprice"></asp:RequiredFieldValidator>
                     </div>
             </div>
             <div class="form-group">
@@ -28,7 +28,7 @@
             <div class="form-group">
                 <asp:Label ID="Label4" runat="server" CssClass="col-md-2 control-label" Text="Categories"></asp:Label>
                 <div class="col-md-3">
-                    <asp:DropDownList ID="ddlcategories" CssClass="form-control" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="ddlcategories" OnSelectedIndexChanged="ddlCategories_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control" runat="server"></asp:DropDownList>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="ddlcategories"></asp:RequiredFieldValidator>
                 </div>
             </div>
@@ -61,13 +61,7 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="FUImg2"></asp:RequiredFieldValidator>
                     </div>
             </div>
-             <div class="form-group">
-                    <asp:Label ID="Label9" runat="server" CssClass="col-md-2 control-label" Text="Upload Image"></asp:Label>
-                    <div class="col-md-3">
-                        <asp:FileUpload ID="FUImg3" CssClass="form-control" runat="server" />
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="FUImg3"></asp:RequiredFieldValidator>
-                    </div>
-            </div>
+            
             <div class="form-group">
                 <div class="col-md-2"></div>
                     <div class="col-md-6">

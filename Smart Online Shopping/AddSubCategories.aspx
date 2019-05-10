@@ -4,7 +4,7 @@
         <div class="form-horizontal">
             <h2>Add Sub Categories</h2>
             <hr />
-         </div>
+        
            <div class="form-group">
                  <div class="form-group">
                 <asp:Label ID="Label4" runat="server" CssClass="col-md-2 control-label" Text="Categories"></asp:Label>
@@ -36,11 +36,45 @@
             <div class="form-group">
                 <div class="col-md-2"></div>
                     <div class="col-md-6">
-                        <asp:Button ID="btnaddSubCategory" 
-                            runat="server" 
-                            Text="Add Sub Category" 
-                            OnClick="btnaddSubCategory_Click"/>
+                        <asp:Button ID="BtnAddSubCategories" runat="server" Text="Add Sub Categories" OnClick="BtnAddSubCategories_Click" />
                     </div>
             </div>
          </div>
+          </div>
+              <div class="form-horizontal">
+          <h2>Categories</h2>
+             <hr />
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">All Categories</div>
+              <asp:Repeater ID="RepeaterSubCategory" runat="server">
+               <HeaderTemplate>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Sub Category</th>
+                                <th>Main Category</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                </HeaderTemplate>
+                <ItemTemplate>
+                    <tr>
+                        <th><%# Eval("SubCatID") %></th>
+                        <td><%# Eval("SubCatName") %></td>
+                        <td><%# Eval("CatName") %></td>
+                        <td>Edit</td>
+                    </tr>
+                </ItemTemplate>
+                <FooterTemplate>
+                    </tbody>
+            </table>
+                </FooterTemplate>
+              </asp:Repeater>
+            </div>
+          </div>
+
+
 </asp:Content>
