@@ -35,7 +35,7 @@ namespace Smart_Online_Shopping
                     if (Usertype=="U")
                     {
                         Session["USERNAME"] = UserName.Text;
-                        Response.Redirect("~/UserHome.aspx");
+                        Response.Redirect("~/Product.aspx");
                     }
                     if (Usertype == "A")
                     {

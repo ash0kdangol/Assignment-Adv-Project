@@ -11,7 +11,26 @@ namespace Smart_Online_Shopping
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["USERNAME"] != null)
+            {
 
+            }
+
+            else
+            {
+                Response.Redirect("~/Login.aspx");
+            }
+        }
+
+        protected void btnadminsignin_Click(object sender, EventArgs e)
+        {
+            Session["USERNAME"] = null;
+            Response.Redirect("~/Homepage.aspx");
+        }
+
+        protected void btnadminlogout_Click(object sender, EventArgs e)
+        {
+             Response.Redirect("~/Homepage.aspx");
         }
     }
 }
