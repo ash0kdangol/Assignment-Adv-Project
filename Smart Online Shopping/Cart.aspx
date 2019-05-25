@@ -5,7 +5,7 @@
          <div class="media" style="border: 1px solid #eaeaec;">
             <div class="media-left">
                 <a href="ProductView.aspx?PID=<%#Eval("PID") %>" target="_blank">
-                    <img width="100px" class="media-object" src="Images/ProductImages/<%#Eval("PID") %>/<%#Eval("Name") %><%#Eval("Extension") %>" alt="<%#Eval("Name") %>" onerror="this.src='images/noimage.jpg'">
+                    <img class="media-object" src="Images/ProductImages/<%#Eval("PID") %>/<%#Eval("Name") %><%#Eval("Extension") %>" alt="<%#Eval("Name") %>" onerror="this.src='images/noimage.jpg'">
                 </a>
             </div>
             <div class="media-body">
